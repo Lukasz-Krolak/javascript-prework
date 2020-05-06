@@ -42,16 +42,16 @@ printMessage('Twój ruch to: ' + playerMove);
 if( computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Ty wygrywasz!');
 }
-if( computerMove == 'papier' && playerMove == 'nożyczki'){
+if( computerMove == 'papier' && playerMove == 'nożyce'){
     printMessage('Ty wygrywasz!');
 }
-if( computerMove == 'nożyczki' && playerMove == 'kamień'){
+if( computerMove == 'nożyce' && playerMove == 'kamień'){
     printMessage('Ty wygrywasz!');
 }
-if( computerMove == 'kamień' && playerMove == 'nożyczki'){
+if( computerMove == 'kamień' && playerMove == 'nożyce'){
     printMessage('Komputer wygrywa!');
 }
-if( computerMove == 'nożyczki' && playerMove == 'papier'){
+if( computerMove == 'nożyce' && playerMove == 'papier'){
     printMessage('Komputer wygrywa!');
 }
 if( computerMove == 'papier' && playerMove == 'kamień'){
