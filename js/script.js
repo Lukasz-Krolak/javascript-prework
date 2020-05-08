@@ -1,34 +1,35 @@
 function playGame(){
-    function clearMessages(){
-        document.getElementById('messages').innerHTML = '';
-    }
+
     
     /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
         console.log('Gracz wpisał: ' + playerInput); */
     
     let randomNumber = Math.floor(Math.random() * 3 + 1);
         console.log('Wylosowana liczba to: ' + randomNumber);
-    
     let argComputerMove = getMoveName(randomNumber);
-    
     let argPlayerMove = getMoveName(playerInput);
     
  
     function getMoveName(argMoveId){
         if(argMoveId == 1){
+            printMessage('kamień')
         return 'kamień';
         } else if(argMoveId == 2){
+            printMessage('papier')
             return 'papier';
         } else if(argMoveId == 3){
+            printMessage('nożyce')
             return 'nożyce'
         } else {
         printMessage('Nie znam ruchu o id ' + argMoveId + '.');
         return 'nieznany ruch';
         }
     }
-printMessage('Mój ruch to: ' + argComputerMove);
-printMessage('Twój ruch to: ' + argPlayerMove);
+/*printMessage('Mój ruch to: ' + argComputerMove);
+printMessage('Twój ruch to: ' + argPlayerMove);*/
 
+   
+}
     function displayResult(argComputerMove, argPlayerMove){
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
         console.log('moves:', argComputerMove, argPlayerMove);
@@ -48,15 +49,4 @@ printMessage('Twój ruch to: ' + argPlayerMove);
         } else if(argComputerMove == argPlayerMove){
             printMessage('Remis');
         }
-    }    
-        document.getElementById('play-Rock').addEventListener('click', function(){
-            playerInput = 1
-          });
-        function buttonClicked(){
-            printMessage('Guzik został kliknięty');
-          }
-          
-          let testButton = document.getElementById('playerInput');
-          
-          testButton.addEventListener('click', buttonClicked);
-    }
+    } 
