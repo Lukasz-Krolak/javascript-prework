@@ -1,10 +1,13 @@
 function playGame() {
     clearMessages();
-
+    
+    let playerMove = document.getElementById('play-rock');
+    let playerMove = document.getElementById('play-paper');
+    let playerMove = document.getElementById('play-scissors');
     let randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('Wylosowana liczba to: ' + randomNumber);
     let argComputerMove = getMoveName(randomNumber);
-    let argPlayerMove = getMoveName();
+    let argPlayerMove = getMoveName(playerMove);
     console.log(argPlayerMove, argComputerMove);
 
 
@@ -46,11 +49,11 @@ function displayResult(argComputerMove, argPlayerMove) {
     }
 }
 
-document.getElementById('play-rock').addEventListener('click', function () {
-    playGame(1); return(argMoveId = 1);
+playerMove.getElementById('play-rock').addEventListener('click', function () {
+    playGame(1); 
 });
 document.getElementById('play-paper').addEventListener('click', function () {
-    playGame(2); return(argMoveId = 2);
+    playGame(2); 
 });
 document.getElementById('play-scissors').addEventListener('click', function() {
     playGame(3); 
