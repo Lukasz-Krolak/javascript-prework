@@ -1,5 +1,5 @@
 function playGame(){
-
+    
     
     /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
         console.log('Gracz wpisał: ' + playerInput); */
@@ -50,3 +50,18 @@ printMessage('Twój ruch to: ' + argPlayerMove);*/
             printMessage('Remis');
         }
     } 
+    let rockButton = document.getElementById('play-rock');
+    let paperButton = document.getElementById('play-paper');
+    
+    console.log=dokument.getElementById('play-rock').addEventListener('click',function(){
+        printMessage('Zagraleś Kamień');return 1;
+      });
+    dokument.getElementById('play-paper').addEventListener('click',function(){
+        printMessage('Zagraleś papier'); return 2;
+      });
+
+      
+
+
+        rockButton.addEventListener('click', buttonClicked);
+        paperButton.addEventListener('click', playGame(2));
