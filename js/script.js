@@ -1,5 +1,5 @@
 {
-    function playGame() {
+    const playGame = function() {
         clearMessages();
 
         const getMoveName = function(argMoveId) {
