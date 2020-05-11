@@ -1,8 +1,8 @@
 {
-    const playGame = function() {
+    const playGame = function (playerMove) {
         clearMessages();
 
-        const getMoveName = function(argMoveId) {
+        const getMoveName = function (argMoveId) {
             if (argMoveId == 1) {
                 return 'kamień';
             } else if (argMoveId == 2) {
@@ -22,10 +22,10 @@
         console.log('Gracz wybrał: ' + playerMove);
 
 
-        
+
         displayResult(argComputerMove, argPlayerMove);
     }
-    const displayResult = function(argComputerMove, argPlayerMove) {
+    const displayResult = function (argComputerMove, argPlayerMove) {
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
         console.log('moves:', argComputerMove, argPlayerMove);
 
