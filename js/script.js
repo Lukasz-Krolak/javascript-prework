@@ -18,6 +18,7 @@
         const randomNumber = Math.floor(Math.random() * 3 + 1);
         console.log('Wylosowana liczba to: ' + randomNumber);
         const argComputerMove = getMoveName(randomNumber);
+        
         const argPlayerMove = getMoveName(playerMove);
         console.log('Gracz wybrał: ' + playerMove);
 
@@ -49,12 +50,12 @@
 
 
     document.getElementById('play-rock').addEventListener('click', function () {
-        playGame(playerMove = 1);
+        playGame(1);
     });
     document.getElementById('play-paper').addEventListener('click', function () {
-        playGame(playerMove = 2);
+        playGame(2);
     });
     document.getElementById('play-scissors').addEventListener('click', function () {
-        playGame(playerMove = 3);
+        playGame(3);
     });
 }
